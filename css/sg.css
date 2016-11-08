@@ -1,0 +1,604 @@
+/*去掉标签的默认的样式*/
+body,h1,h2,h3,h4,h5,h6,p,pre,ol,ul,li,form,input,textarea,dl,dt,dd{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+ul,ol{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+body{
+  background:#fff;
+  color:#828282;
+}
+*{
+  font-family:Arial, sans-serif;
+}
+img{
+	border:none;
+}
+/*栅格系统*/
+.container{
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+.container .row{
+	height: auto;
+	overflow: hidden;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 -15px;
+}
+@media  screen and (min-width:1200px ) {
+	.container{
+		width: 1000px;
+	}
+	.container>.row{
+		width: 1000px;
+		/*margin: 0 ;*/
+	}
+	.container>.row>.con-lg-1{
+		width: 8.333333%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-2{
+		width: 16.666666%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-3{
+		width: 25%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-4{
+		width: 33.333333%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-5{
+		width: 41.666666%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-6{
+		width: 50%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-7{
+		width: 58.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-8{
+		width: 66.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-9{
+		width: 75%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-10{
+		width: 83.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-11{
+		width: 91.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-lg-12{
+		width: 100%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+}
+
+@media  screen and (min-width:992px ) and (max-width:1200px ) {
+	.container{
+		width: 960px;
+	}
+	.container>.row{
+		width: 960px;
+	}
+	.container>.row>.con-mid-1{
+		width: 8.333333%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-2{
+		width: 16.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-3{
+		width: 25%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-4{
+		width: 33.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-5{
+		width: 41.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-6{
+		width: 50%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-7{
+		width: 58.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-8{
+		width: 66.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-9{
+		width: 75%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-10{
+		width: 83.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-11{
+		width: 91.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-mid-12{
+		width: 100%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+}
+
+@media  screen and (min-width:768px ) and (max-width:992px ) {
+	#center1B .ul .li{
+		float: left;
+		max-width: 172px;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0 3px;
+	}
+	#center1B .li-con .li-img img{
+	border: 0;
+	width:172px;
+	height: 120px;
+	vertical-align: middle;
+}
+	#header1{
+		margin-top:0;
+		margin-bottom: 16px;
+		float:none;
+		text-align: center;
+	}
+	#header2{
+		float: none;
+		width: auto;
+		height: auto;
+		text-align: center;
+	}
+	#header2 .connectT{
+		float: none;
+		display: inline-block;
+		margin-bottom: 10px;
+		padding-bottom: 0.5em;
+		text-align: center;
+	}
+	#header2 .connectB{
+		float: none;
+		text-align: center;
+		margin-top: 0;
+		font-size: 0;
+	}
+	#header3{
+		border: none;
+		overflow: hidden;
+		max-width: 380px;
+		margin: 20px auto 0;
+}
+	#nav{
+		display: none;
+	}
+	#header3 .nav-sel{
+		display: block;
+	}
+	#header3 .search{
+		float: none;
+		padding: 0;
+		border-left: none;
+		line-height: 1.7em;
+		width: 35px;
+		height: 35px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	#header3 .search .ser-text{
+		margin: 0 4px;
+		padding: 8px 5px;
+		font-size: 13px;
+	}
+	#header3 .search .ser-sub{
+	background: #ccc;
+	color: #fff;
+}
+	.container{
+		width: 750px;
+	}
+	.container>.row{
+		width: 750px;
+	}
+	.container>.row>.con-sm-1{
+		width: 8.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-2{
+		width: 16.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-3{
+		width: 25%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-4{
+		width: 33.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-5{
+		width: 41.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-6{
+		width: 50%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-7{
+		width: 58.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-8{
+		width: 66.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-9{
+		width: 75%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-10{
+		width: 83.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-11{
+		width: 91.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-sm-12{
+		width: 100%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+}
+
+@media  screen and (max-width:768px ) {
+	#center1B .ul .li{
+		float: none;
+		width: auto;
+		/*position: absolute;*/
+		/*left: 0;
+		top: 0;*/
+		text-align: center;
+		vertical-align: middle;
+		/*margin: 0 5px;*/
+	}
+	#center1B .li-con .li-img img{
+	border: 0;
+	width: 460px;
+	height: 320px;
+	vertical-align: middle;
+}
+#brand li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+	.container{
+		width: 400px;
+	}
+	#header1{
+		margin-top:0;
+		margin-bottom: 16px;
+		float:none;
+		text-align: center;
+	}
+	#header2{
+		float: none;
+		width: auto;
+		height: auto;
+		text-align: center;
+	}
+	#header2 .connectT{
+		float: none;
+		display: inline-block;
+		margin-bottom: 10px;
+		padding-bottom: 0.5em;
+		text-align: center;
+	}
+	#header2 .connectB{
+		float: none;
+		text-align: center;
+		margin-top: 0;
+		font-size: 0;
+	}
+	#header3{
+		border: none;
+		overflow: hidden;
+		max-width: 380px;
+		margin: 20px auto 0;
+}
+	#nav{
+		display: none;
+	}
+	#header3 .nav-sel{
+		display: block;
+	}
+	#header3 .search{
+		float: none;
+		padding: 0;
+		border-left: none;
+		line-height: 1.7em;
+		width: 35px;
+		height: 35px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	#header3 .search .ser-text{
+		margin: 0 4px;
+		padding: 8px 5px;
+		font-size: 13px;
+	}
+	#header3 .search .ser-sub{
+	background: #ccc;
+	color: #fff;
+}
+#footer6 .left{
+	float: none;
+	text-align: center;
+}
+#footer6 .right{
+	float: none;
+	text-align: center;
+}
+	.container>.row{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.container>.row>.con-xs-1{
+		width: 8.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-2{
+		width: 16.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-3{
+		width: 25%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-4{
+		width: 33.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-5{
+		width: 41.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-6{
+		width: 50%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-7{
+		width: 58.333333%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-8{
+		width: 66.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-9{
+		width: 75%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-10{
+		width: 83.333333%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-11{
+		width: 91.666666%;
+		height: auto;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+	.container>.row>.con-xs-12{
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 15px;
+		float: left;
+	}
+}
+
