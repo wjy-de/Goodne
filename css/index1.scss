@@ -1,0 +1,84 @@
+$bgwidth:960px;
+$mdwidth:768px;
+$smwidth:400px;
+$padding:10px;
+$margin:10px;
+$type:lg md sm xs;
+@mixin every($nth-type){
+    .container,.container-fluid{
+        height: auto;
+        overflow: hidden;
+        padding: {
+           left: $padding;
+           right: $padding;
+        };
+        margin: {
+            left:auto ;
+            right: auto;
+        }
+        box-sizing: border-box;
+        &>.row{
+            height: auto;
+            overflow: hidden;
+            margin: {
+                left: -$margin;
+                right: -$margin;
+            };
+            box-sizing: border-box;
+            @for $i from 1 through 12{
+                &>.col-#{$nth-type}-#{$i}{
+                        width: ($i/12)*100%;
+                        position: relative;
+                        height: auto;
+                        padding:{
+                            left: $padding;
+                            right: $padding;
+                        }
+                        box-sizing: border-box;
+                        float: left;
+                        overflow: hidden;
+                }
+                &>.hidden-#{$nth-type}{
+                    display: none;
+                }
+                 &>.col-#{$nth-type}-offset-#{$i}{
+                     margin-left: (1/12)*100%*$i;;
+                 }
+                 &>.col-#{$nth-type}-push-#{$i}{
+                     left:(1/12)*100%*$i;;
+                 }
+                 &>.col-#{$nth-type}-pull-#{$i}{
+                     right:(1/12)*100%*$i;;
+                 }
+            }
+         }
+        
+    }
+    .container-fluid{
+        width: 100%;
+    }
+}
+@media screen and (min-width:$bgwidth){
+     @include every(nth($type,1))
+    .container{
+        width:960px;
+    }
+}
+@media screen and (min-width:$mdwidth) and (max-width:$bgwidth) {
+     @include every(nth($type,2))
+    .container{
+        width:768px;
+    }
+}
+@media screen and (min-width:$smwidth) and (max-width:$mdwidth){
+     @include every(nth($type,3))
+    .container{
+        width: 400px;
+    }
+}
+@media screen and (max-width:$smwidth){
+     @include every(nth($type,4))
+    .container{
+        width: 280px;
+    }
+}
